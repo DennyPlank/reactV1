@@ -4,16 +4,23 @@
 # Examples:
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+# #   Character.create(name: 'Luke', movie: movies.first)
 
-require "faker"
+# require "faker"
 
-page.create(title: 'Page 1', author: 'Jim', body: 'yo')
+# page.create(title: 'Page 1', author: 'Jim', body: 'yo')
+
+# 10.times do
+#   Page.create(
+#     title: Faker::Hacker.abbreviation,
+#     body: Faker::Hacker.say_something_smart,
+#     author: Faker::Name.name,
+# )
+# end
 
 10.times do
-  Page.create(
+  Note.create(
     title: Faker::Hacker.abbreviation,
-    body: Faker::Hacker.say_something_smart,
-    author: Faker::Name.name,
-)
+    Description: Faker::Hacker.say_something_smart,
+  )
 end
