@@ -19,11 +19,6 @@ class NotesController < ApplicationController
   #render component:
   end
 
-  def create
-  # create car(from from UI) to our db
-  #render component:
-  end
-
 #(U)pdate
   def edit
   #we need to find car in DB to update
