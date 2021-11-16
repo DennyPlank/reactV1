@@ -18,9 +18,10 @@
 # )
 # end
 
-10.times do
-  Note.create(
-    title: Faker::Hacker.abbreviation,
-    Description: Faker::Hacker.say_something_smart,
-  )
-end
+ Car.create(make: 'Ford', price: 10000.00)
+ Car.create(make: 'Chevy', price: 5000.00)
+
+
+p car.first
+p Car.first.make
+p Car.first.price
